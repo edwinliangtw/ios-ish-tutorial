@@ -6,8 +6,11 @@ ios ish app tutorial
 
 ## ISH ios app 讓手機變 webserver ~~
 
+
+
 ### 下載ISH ios app並開啟軟體, 更新軟件包
 apk update
+
 apk upgrade
 
 ### 1.下載 pyhton3
