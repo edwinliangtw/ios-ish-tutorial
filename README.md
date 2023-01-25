@@ -6,13 +6,12 @@ ios ish app tutorial
 
 ## ISH ios app 讓手機變 webserver ~~
 
-### 下載ISH ios app並開啟軟體
-apk update 更新軟件包
+### 下載ISH ios app並開啟軟體, 更新軟件包
+apk update
+apk upgrade
 
 ### 1.下載 pyhton3
-apk add python3
-
-apk add py3-pip
+apk add python3 py3-pip
 
 ### 2.ngrok 內網穿透工具讓 webserver 可以對外開放
 pip3 install pyngrok 下載有點久XD
