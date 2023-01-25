@@ -73,9 +73,14 @@ cat /dev/location > /dev/null & python3 -m http.server & echo server start
 
 3)開啟 frp 連線
 
+~/frp_0.46.1_linux_386/frps
 
+4)查詢網址(port 為 frpc.ini remote_port 設定)
+http://frp.freefrp.net:10001/ 
 
 ====================================
+
+下述過期不看 20230126 備註
 
 ## 讓 mac or windows ssh 進手機 ~~
 先確定上述流程都跑過一遍
