@@ -16,16 +16,53 @@ apk upgrade
 ### 1.下載 pyhton3
 apk add python3 py3-pip
 
-### 2.ngrok 內網穿透工具讓 webserver 可以對外開放
-pip3 install pyngrok 下載有點久XD
+### 2.frp 內網穿透工具讓 webserver 可以對外開放
 
-ngrok 下載 ngrok
+1) 建立網頁
+ 
+ehco "hello world" > index.html
 
-ngrok authtoken xxxxxxxxxxxxxxxxxxxxx 
+1) 下載frp
 
-(請在 ngrok 官網查詢 token)
+wget https://github.com/fatedier/frp/releases/download/v0.46.1/frp_0.46.1_linux_386.tar.gz
 
-### 3.開啟 server 並對外開放服務
+2) 解壓縮
+
+tar -zxvf frp_0.46.1_linux_386.tar.gz
+
+3) 進入 frp_0.46.1_linux_386 資料夾
+
+cd frp_0.46.1_linux_386
+
+4) 下載 vim
+
+apk add vim
+
+5) 修正 frpc.ini
+
+vim frpc.ini
+
+[common]
+
+server_addr = frp.freefrp.net
+
+server_port = 7000
+
+token = freefrp.net
+
+[your_name_frp]
+
+type = tcp
+
+local_ip = 127.0.0.1
+
+local_port = 8000
+
+remote_port = 10001 範圍為10001~50000 請自定
+
+
+
+## 3.開啟 server 並對外開放服務
 cat /dev/location > /dev/null & python3 -m http.server & ngrok http 8000 & echo server start
 
 (cat /dev/location > /dev/null & 是讓程式背景執行並成為常佇程式)
