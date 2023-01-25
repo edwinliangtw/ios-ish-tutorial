@@ -42,6 +42,8 @@ apk add vim
 
 vim frpc.ini
 
+內容為：
+
 [common]
 
 server_addr = frp.freefrp.net
@@ -61,20 +63,15 @@ local_port = 8000
 remote_port = 10001 範圍為10001~50000 請自定
 
 
-
 ## 3.開啟 server 並對外開放服務
-cat /dev/location > /dev/null & python3 -m http.server & ngrok http 8000 & echo server start
+
+1)開啟 http server
+
+cat /dev/location > /dev/null & python3 -m http.server & echo server start
 
 (cat /dev/location > /dev/null & 是讓程式背景執行並成為常佇程式)
 
-(http://127.0.0.1:4040 查詢 ngrok 對外連結)
-
-### 4.建立網頁
-apk add nano 文字編輯器
-
-echo helloworld > index.html 建立首頁
-
-nano index.html 編輯網頁(^按著不放加x可以離開編輯器)
+2)開啟 frp 連線
 
 
 
