@@ -18,10 +18,6 @@ apk add python3 py3-pip
 
 ### 2.frp 內網穿透工具讓 webserver 可以對外開放
 
-1) 建立網頁
- 
-ehco "hello world" > index.html
-
 1) 下載frp
 
 wget https://github.com/fatedier/frp/releases/download/v0.46.1/frp_0.46.1_linux_386.tar.gz
@@ -65,13 +61,17 @@ remote_port = 10001 範圍為10001~50000 請自定
 
 ## 3.開啟 server 並對外開放服務
 
-1)開啟 http server
+1) 建立網頁
+ 
+ehco "hello world" > index.html
+
+2)開啟 http server
 
 cat /dev/location > /dev/null & python3 -m http.server & echo server start
 
 (cat /dev/location > /dev/null & 是讓程式背景執行並成為常佇程式)
 
-2)開啟 frp 連線
+3)開啟 frp 連線
 
 
 
