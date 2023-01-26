@@ -86,10 +86,7 @@ http://frp.freefrp.net:10001/
 
 ====================================
 
-下述過期不看 20230126 備註
-
-## 讓 mac or windows ssh 進手機 ~~
-先確定上述流程都跑過一遍
+## 安裝 openssh ~~
 
 ### 1. 下載服務管理器 OpenRC
 apk add openrc
@@ -107,13 +104,3 @@ ehco 'Port 22000' >> /etc/ssh/sshd_config 更改 ssh port 至 22000(ios手機預
 
 ### 3. 重啟 app 並啟動 sshd
 rc-service sshd start (開啟 ssh 服務, stop 可關閉服務)
-
-### 4. 對外開放 ssh
-cat /dev/location > /dev/null & ngrok tcp 22000 & echo server start
-
-(http://127.0.0.1:4040 查詢 ssh ip:port 對外連結)
-
-### 5. 連線至手機
-ssh root@x.tcp.ngrok.io -pxxxxx -v
-
-(-p後面帶port)
