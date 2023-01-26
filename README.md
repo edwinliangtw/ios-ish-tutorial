@@ -59,7 +59,7 @@ local_port = 8000
 remote_port = 10001 範圍為10001~50000 請自定
 
 
-## 3.開啟 server 並對外開放服務
+### 3.開啟 server 並對外開放服務
 
 1) 建立網頁
  
@@ -77,6 +77,12 @@ cat /dev/location > /dev/null & python3 -m http.server & echo server start
 
 4)查詢網址(port 為 frpc.ini remote_port 設定)
 http://frp.freefrp.net:10001/ 
+
+====================================
+
+
+
+
 
 ====================================
 
