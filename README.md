@@ -125,3 +125,21 @@ imap jj <Esc>
 ```
 :set number
 ```
+====================================
+
+
+
+
+
+====================================
+## 給 ngrok 使用者 ~~
+
+```
+pip install pyngrok #下載 pyngrok
+ngrok #下載 ngrok 
+ngrok authtoken 1RPCrbZvVGn……bBfYa316Dg1tLoEw #輸入驗證
+ngrok http 80 #啟動ngrok
+ps aux #列出所有進程
+ps aux | grep ngrok #列出指定進程
+killall -9 ngrok #刪除指定進程
+```
