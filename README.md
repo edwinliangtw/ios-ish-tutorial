@@ -150,9 +150,9 @@ killall -9 ngrok #刪除指定進程
 ```
 apk add tmux #下載tmux
 tmux #進入tmux
-ctrl+b 再按 % 切左右雙屏
-ctrl+b 再按 <- 切左屏
-ctrl+b 再按 -> 切右屏
-ctrl+b 再按 & 離開視窗 
+ctrl+b 再按 % #切左右雙屏 .. 小小記憶技巧 % 兩個小圈圈被/切開兩邊
+ctrl+b 再按 <- #切左屏
+ctrl+b 再按 -> #切右屏
+ctrl+b 再按 & #離開視窗 .. 小小記憶技巧 and 發音類似 end
 ```
 [TMUX指令索引](https://dywang.csie.cyut.edu.tw/dywang/security/node98.html)
