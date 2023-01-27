@@ -117,7 +117,11 @@ rc-service sshd restart (開啟 ssh 服務, stop 可關閉服務, restart 重啟
 
 ### 1. 建立 .vimrc 文件
 vim ~/.vimrc
-### 2. 輸入以下內容後完工
+### 2. 輸入以下內容
 ```
 imap jj <Esc>
+```
+### 3. 如果要永久設定顯示行號輸入以下內容在 imap jj .... 下一行
+```
+:set number
 ```
