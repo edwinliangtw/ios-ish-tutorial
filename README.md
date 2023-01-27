@@ -104,3 +104,18 @@ ehco 'Port 22000' >> /etc/ssh/sshd_config 更改 ssh port 至 22000(ios手機預
 
 ### 3. 重啟 app 並啟動 sshd
 rc-service sshd start (開啟 ssh 服務, stop 可關閉服務)
+
+====================================
+
+
+
+
+
+====================================
+
+## vim 裡惱人的 Esc 鍵用 jj 取代 ~~
+
+### 1. 建立 .vimrc 文件
+vim ~/.vimrc
+### 2. 輸入以下內容後完工
+imap jj <Esc>
