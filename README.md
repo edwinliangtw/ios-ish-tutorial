@@ -4,7 +4,7 @@ ios ish app tutorial
 
 [app載點](https://apps.apple.com/tw/app/ish-shell/id1436902243)
 
-## ISH ios app 讓手機變 webserver ~~
+## :smirk:ISH ios app 讓手機變 webserver ~~
 
 
 
@@ -86,7 +86,7 @@ http://frp.freefrp.net:10001/
 
 ====================================
 
-## 安裝 openssh ~~
+## :smirk:安裝 openssh ~~
 
 ### 1. 下載服務管理器 OpenRC
 apk add openrc
@@ -113,7 +113,7 @@ rc-service sshd restart (開啟 ssh 服務, stop 可關閉服務, restart 重啟
 
 ====================================
 
-## vim 裡惱人的 Esc 鍵用 jj 取代 ~~
+## :smirk:vim 裡惱人的 Esc 鍵用 jj 取代 ~~
 
 ### 1. 建立 .vimrc 文件
 vim ~/.vimrc
@@ -132,7 +132,7 @@ imap jj <Esc>
 
 
 ====================================
-## 給 ngrok 使用者 ~~
+## :smirk:給 ngrok 使用者 ~~
 
 ```
 pip install pyngrok #下載 pyngrok
@@ -145,7 +145,7 @@ killall -9 ngrok #刪除指定進程
 ```
 
 ====================================
-## ish 裡切割左右視窗 ~~
+## :smirk:ish 裡切割左右視窗 ~~
 
 ```
 apk add tmux #下載tmux
