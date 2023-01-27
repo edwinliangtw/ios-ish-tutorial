@@ -143,3 +143,16 @@ ps aux #列出所有進程
 ps aux | grep ngrok #列出指定進程
 killall -9 ngrok #刪除指定進程
 ```
+
+====================================
+## ish 裡切割左右視窗 ~~
+
+```
+apk add tmux #下載tmux
+tmux #進入tmux
+ctrl+b 再按 % 切左右雙屏
+ctrl+b 再按 <- 切左屏
+ctrl+b 再按 -> 切右屏
+ctrl+b 再按 & 離開視窗 
+```
+(https://dywang.csie.cyut.edu.tw/dywang/security/node98.html)[TMUX指令索引]
