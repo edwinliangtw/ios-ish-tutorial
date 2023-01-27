@@ -147,3 +147,14 @@ ctrl+b 再按 -> #切右屏
 ctrl+b 再按 & #離開視窗 .. 小小記憶技巧 and 發音類似 end
 ```
 [TMUX指令索引](https://dywang.csie.cyut.edu.tw/dywang/security/node98.html)
+
+====================================
+
+## :smirk:ssh 到 ish （反向打洞reverse ssh tunnel） ~~
+```
+# ish 裡輸入下面程式碼開放 12345 port 給 edwin@172.20.10.5 的電腦進入
+ssh -NfR 12345:localhost:22000 edwin@172.20.10.5
+
+# edwin@172.20.10.5 的電腦輸入下面指令後打密碼即可登入(可用passwd重新設置ish密碼)
+ssh root@localhost -p 12345
+```
