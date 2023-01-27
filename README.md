@@ -155,4 +155,4 @@ ctrl+b 再按 <- 切左屏
 ctrl+b 再按 -> 切右屏
 ctrl+b 再按 & 離開視窗 
 ```
-(https://dywang.csie.cyut.edu.tw/dywang/security/node98.html)[TMUX指令索引]
+[TMUX指令索引](https://dywang.csie.cyut.edu.tw/dywang/security/node98.html)
