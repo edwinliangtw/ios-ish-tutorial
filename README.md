@@ -118,4 +118,6 @@ rc-service sshd start (開啟 ssh 服務, stop 可關閉服務)
 ### 1. 建立 .vimrc 文件
 vim ~/.vimrc
 ### 2. 輸入以下內容後完工
+```
 imap jj <Esc>
+```
