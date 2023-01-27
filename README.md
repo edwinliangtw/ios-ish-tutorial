@@ -102,8 +102,8 @@ echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config 允許 root login
 
 ehco 'Port 22000' >> /etc/ssh/sshd_config 更改 ssh port 至 22000(ios手機預設擋22)
 
-### 3. 重啟 app 並啟動 sshd
-rc-service sshd start (開啟 ssh 服務, stop 可關閉服務)
+### 3. 重新啟動 sshd
+rc-service sshd restart (開啟 ssh 服務, stop 可關閉服務, restart 重啟服務)
 
 ====================================
 
